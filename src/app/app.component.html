@@ -1,0 +1,171 @@
+<div class="verbaleCSEN" fxLayout="row"></div>
+
+<div fxLayout="row">
+  <!-- Tabelle -->
+  <div fxFlex="80">
+    <div fxLayout="column">
+      <!-- Tabella 1 -->
+      <div fxFlex>
+        <table *ngFor="let tabella of tabelle">
+          <tr>
+            <th>Soc.</th>
+            <th>{{ tabella.dati.nomeSocieta }}</th>
+            <th>Calottina<br />{{ tabella.dati.calottina }}</th>
+            <th colspan="2">Risutato<br />{{ tabella.dati.RT }}</th>
+            <th
+              colspan="9"
+              style="text-align:left; vertical-align:top; font-weight:600"
+            >
+              NOTE
+            </th>
+          </tr>
+          <tr>
+            <th>N</th>
+            <th>Giocatori</th>
+            <th>Tess. CSEN</th>
+            <th style="text-transform:'uppercase'" colspan="3">espulsioni</th>
+            <th style="text-transform:'uppercase'">1° tempo</th>
+            <th style="text-transform:'uppercase'">t.o.</th>
+            <th style="text-transform:'uppercase'">2° tempo</th>
+            <th style="text-transform:'uppercase'">t.o.</th>
+            <th style="text-transform:'uppercase'">3° tempo</th>
+            <th style="text-transform:'uppercase'">t.o.</th>
+            <th style="text-transform:'uppercase'">4° tempo</th>
+            <th style="text-transform:'uppercase'">t.o.</th>
+          </tr>
+
+          <tr *ngFor="let riga of tabella.righe; let index = index">
+            <!--<tr *ngFor="let riga of [].constructor(15); let index = index"> -->
+            <td>{{ index + 1 }}</td>
+            <td>{{ riga.cognomeGiocatore }}, {{ riga.nomeGiocatore }}</td>
+            <td>{{ riga.numeroTessera }}</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2"></td>
+            <td colspan="2"></td>
+            <td colspan="2"></td>
+            <td colspan="2"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Tabella laterale -->
+    <!-- Tabelle -->
+    <div fxFlex="20">
+      <div fxLayout="column">
+        <!-- Tabella 1 -->
+        <div fxFlex>
+          <table>
+            <tr>
+              <th colspan="3" rowspan="4">LOGO</th>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+              <td colspan="3" rowspan="2">CAMPIONATO REGIONALE<br />LAZIO</td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+              <td style="text-align:left" colspan="3">CAT. {{ const.cat }}</td>
+            </tr>
+            <tr>
+              <td style="text-align:left" colspan="3">
+                DATA {{ const.dataPartita }}
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align:left" colspan="3">
+                IMPIANTO {{ const.stadio }}
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align:left" colspan="3">
+                ORA INIZIO {{ const.Hinizio }}
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align:left" colspan="3">
+                ORA FINE {{ const.Hfine }}
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" style="font-weight:600">Risultati parziali</td>
+            </tr>
+            <tr>
+              <td>TEMPI</td>
+              <td>B</td>
+              <td>N</td>
+            </tr>
+            <tr>
+              <td>1° T</td>
+              <td *ngFor="let tabella of tabelle">{{ tabella.dati.Rt1 }}</td>
+            </tr>
+            <tr>
+              <td>2° T</td>
+              <td *ngFor="let tabella of tabelle">{{ tabella.dati.Rt2 }}</td>
+            </tr>
+            <tr>
+              <td>3° T</td>
+              <td *ngFor="let tabella of tabelle">{{ tabella.dati.Rt3 }}</td>
+            </tr>
+            <tr>
+              <td>4° T</td>
+              <td *ngFor="let tabella of tabelle">{{ tabella.dati.Rt4 }}</td>
+            </tr>
+          </table>
+          <table>
+            <!-- Tabella 2 -->
+            <tr>
+              <td style="text-align:left; vertical-align:top; font-weight:600">
+                Medico Dott.
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align:left; vertical-align:top; font-weight:600">
+                Tess.
+              </td>
+            </tr>
+            <tr>
+              <td
+                rowspan="2"
+                style="text-align:left; vertical-align:top; font-weight:600"
+              >
+                Firma.
+              </td>
+            </tr>
+            <tr></tr>
+            <tr>
+              <td style="text-align:left">Ufficiali di Gara</td>
+            </tr>
+            <tr>
+              <td style="text-align:left">Arbitro</td>
+            </tr>
+            <tr>
+              <td style="text-align:left">Giudice</td>
+            </tr>
+            <tr>
+              <td style="text-align:left">Cronometrista</td>
+            </tr>
+            <tr>
+              <td style="text-transform:uppercase">Capitani Squadre</td>
+            </tr>
+            <tr>
+              <td style="text-align:left; vertical-align:top">B</td>
+            </tr>
+            <tr>
+              <td style="text-align:left; vertical-align:top">N</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="size: A4 Laandscape">
+  <!-- TABELLONE -->
+</div>
