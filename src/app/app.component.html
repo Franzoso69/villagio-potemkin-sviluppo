@@ -1,6 +1,19 @@
-<mat-toolbar-row>
-  <span>Custom Toolbar</span>
-</mat-toolbar-row>
+<div>
+  <mat-toolbar-row>
+    <span>Custom Toolbar</span>
+  </mat-toolbar-row>
+  <mat-toolbar-row>
+    <span>Second Line</span>
+    <span class="example-spacer"></span>
+    <mat-icon
+      class="example-icon"
+      aria-hidden="false"
+      aria-label="Example user verified icon"
+      >verified_user</mat-icon
+    >
+  </mat-toolbar-row>
+</div>
+
 <div class="verbaleCSEN" fxLayout="column"></div>
 
 <div fxLayout="column">
@@ -37,9 +50,8 @@
             <th style="text-transform:'uppercase'">t.o.</th>
           </tr>
 
-          
           <tr *ngFor="let riga of tabella.righe; let index = index">
-         <!-- <tr
+            <!-- <tr
             *ngFor="let riga of [].constructor(15); let index = index"
             style="height:20px"
           > -->
@@ -63,8 +75,7 @@
     <!-- Tabella laterale -->
     <!-- Tabelle -->
     <div fxFlex="10">
-      <div fxLayout="row" fxLayoutGap='40px'>
-        
+      <div fxLayout="row" fxLayoutGap="40px">
         <!-- Tabella 1 -->
         <div fxFlex>
           <table>
@@ -129,49 +140,54 @@
           </table>
           <div fxLayoutGap="20px">
             <table>
-            <!-- Tabella 2 -->
-            <tr>
-              <td style="text-align:left; vertical-align:top; font-weight:600">
-                Medico Dott.
-              </td>
-            </tr>
-            <tr>
-              <td style="text-align:left; vertical-align:top; font-weight:600">
-                Tess.
-              </td>
-            </tr>
-            <tr>
-              <td
-                rowspan="2"
-                style="text-align:left; vertical-align:top; font-weight:600"
-              >
-                Firma.
-              </td>
-            </tr>
-            <tr></tr>
-            <tr>
-              <td style="text-align:left">Ufficiali di Gara</td>
-            </tr>
-            <tr>
-              <td style="text-align:left">Arbitro</td>
-            </tr>
-            <tr>
-              <td style="text-align:left">Giudice</td>
-            </tr>
-            <tr>
-              <td style="text-align:left">Cronometrista</td>
-            </tr>
-            <tr>
-              <td style="text-transform:uppercase">Capitani Squadre</td>
-            </tr>
-            <tr>
-              <td style="text-align:left; vertical-align:top">B</td>
-            </tr>
-            <tr>
-              <td style="text-align:left; vertical-align:top">N</td>
-            </tr>
-          </table>
-          </div></div>
+              <!-- Tabella 2 -->
+              <tr>
+                <td
+                  style="text-align:left; vertical-align:top; font-weight:600"
+                >
+                  Medico Dott.
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="text-align:left; vertical-align:top; font-weight:600"
+                >
+                  Tess.
+                </td>
+              </tr>
+              <tr>
+                <td
+                  rowspan="2"
+                  style="text-align:left; vertical-align:top; font-weight:600"
+                >
+                  Firma.
+                </td>
+              </tr>
+              <tr></tr>
+              <tr>
+                <td style="text-align:left">Ufficiali di Gara</td>
+              </tr>
+              <tr>
+                <td style="text-align:left">Arbitro</td>
+              </tr>
+              <tr>
+                <td style="text-align:left">Giudice</td>
+              </tr>
+              <tr>
+                <td style="text-align:left">Cronometrista</td>
+              </tr>
+              <tr>
+                <td style="text-transform:uppercase">Capitani Squadre</td>
+              </tr>
+              <tr>
+                <td style="text-align:left; vertical-align:top">B</td>
+              </tr>
+              <tr>
+                <td style="text-align:left; vertical-align:top">N</td>
+              </tr>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
   </div>
