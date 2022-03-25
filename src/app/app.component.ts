@@ -1,6 +1,6 @@
 import { Component, VERSION } from '@angular/core';
 import { RigaVerbaleDto } from './app.class';
-import {impiantiCSENDto} from './app.class';
+import { impiantiCSENDto } from './app.class';
 import moment from 'moment';
 
 const sq_A = 'Empire Aquatica';
@@ -17,10 +17,9 @@ const RT_A = Rt1_A + Rt2_A + Rt3_A + Rt4_A;
 const RT_B = Rt1_B + Rt2_B + Rt3_B + Rt4_B;
 const Cat = 'categoria';
 const dataP = '20/03/2022';
-const stadio= 'Empire Sport & Resort';
+const stadio = 'Empire Sport & Resort';
 const Hinizio = '17:00';
-const Hfine= '18.20';
-
+const Hfine = '18.20';
 
 @Component({
   selector: 'my-app',
@@ -32,14 +31,13 @@ export class AppComponent {
 
   stampaData(data: Date) {
     return moment(data).format('DD-MM-YYYY');
-  };
-  const={
+  }
+  const = {
     cat: Cat,
     dataPartita: dataP,
     stadio: stadio,
-    Hinizio:Hinizio,
-    Hfine:Hfine,
-
+    Hinizio: Hinizio,
+    Hfine: Hfine,
   };
 
   datiA = {
@@ -86,13 +84,13 @@ export class AppComponent {
   ];
 
   impianti: impiantiCSENDto[] = [
-    {nome: 'Empire Sport & Resort',
-    società: 'Empire Aquatica',
-    primario: true,
-    secondario: false,
-    indirizzo: 'via degli Aldobrandeschi 79',
-    città: 'Roma',}
-
-    
-  ]
+    {
+      nome: 'Empire Sport & Resort',
+      società: 'Empire Aquatica',
+      primario: true,
+      secondario: false,
+      indirizzo: 'via degli Aldobrandeschi 79',
+      città: 'Roma',
+    },
+  ];
 }
