@@ -88,3 +88,11 @@ caption {
   text-align: center;
   vertical-align: text-top;
 }
+
+mat-toolbar {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3.5rem;
+  width: 100%;
+  background-color: lightgrey;
