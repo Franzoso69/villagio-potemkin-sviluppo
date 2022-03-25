@@ -1,0 +1,90 @@
+@page: verbaleCSEN {
+  size: A4 Landscape;
+}
+@page: listaPartitaCSEN {
+  size: A4 Portrait;
+}
+.verbaleCSEN {
+  @page: verbaleCSEN;
+  background-color: #182d4d;
+}
+.listaPartitaCSEN {
+  @page: listaPartitaCSEN;
+  background-color: #182d4d;
+}
+
+p {
+  font-family: Lato;
+}
+
+table {
+  font-size: 10px;
+  text-align: center;
+  border-collapse: collapse;
+}
+td,
+th {
+  border: 2px solid #000;
+  /*padding:8px; */
+  height: 20px;
+  width: 200px;
+}
+caption {
+  color: #ddd;
+  background-color: #182d4d;
+}
+.B {
+  background-color: white;
+}
+.J {
+  background-color: cadetblue;
+}
+.n {
+  width: 20px;
+}
+.nome {
+  width: 400px;
+}
+.squadra {
+  width: 500px;
+  font-weight: 600;
+  height: 50px;
+}
+.risultato {
+  width: 100px;
+  height: 20px;
+}
+.espulsioniT {
+  width: 150px;
+}
+.espulsioni {
+  width: 50px;
+}
+.note {
+  text-align: left;
+  vertical-align: top;
+  text-decoration-line: underline;
+  width: 1100px;
+  height: 20px;
+}
+.tempi {
+  width: 200px;
+}
+.to {
+  width: 50px;
+}
+.info1 {
+  width: 200px;
+  text-align: left;
+  vertical-align: top;
+}
+.info {
+  width: 200px;
+  text-align: left;
+  vertical-align: text-top;
+}
+.infoC {
+  width: 210px;
+  text-align: center;
+  vertical-align: text-top;
+}
