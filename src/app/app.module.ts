@@ -40,10 +40,10 @@ import { MatExpansionModule} from '@angular/material/expansion';
 import{  MatCheckboxModule} from '@angular/material/checkbox';
 import{
     MatSelectModule} from '@angular/material/select';
-  MatRadioModule,
-  MatTableModule,
-  MatDialogModule,
-} from '@angular/material';
+  import {MatRadioModule} from '@angular/material/radio';
+import  {MatTableModule} from '@angular/material/table';
+import { MatDialogModule
+} from '@angular/material/dialog';
 /* import {MatBottomSheetModule} from '@angular/material/bottomsheet'; */
 
 @NgModule({
@@ -54,7 +54,7 @@ import{
     AppRoutingModule,
     MatAutocompleteModule,
     MatBadgeModule,
-    MatBottomSheetModule,
+    /*MatBottomSheetModule,*/
     MatButtonToggleModule,
     MatChipsModule,
     MatDatepickerModule,
@@ -62,15 +62,15 @@ import{
     MatGridListModule,
     MatListModule,
     MatMenuModule,
-    BrowserAnimationsModule,
-    MatNativeDateModule,
-    MatPaginatorModule,
+    /*BrowserAnimationsModule,*/
+    /*MatNativeDateModule,*/
+    /*MatPaginatorModule,*/
     MatProgressBarModule,
     MatProgressSpinnerModule,
     MatSidenavModule,
     MatSliderModule,
     MatSlideToggleModule,
-    MatSnackBarModule,
+   /* MatSnackBarModule,*/
     MatSortModule,
     MatStepperModule,
     MatTabsModule,
@@ -80,7 +80,7 @@ import{
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
-    MatRippleModule,
+    /*MatRippleModule,*/
     MatIconModule,
     MatCardModule,
     MatExpansionModule,
