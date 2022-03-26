@@ -12,21 +12,20 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatDatepickerModule } from '@angular/material/datepicker';
-import {
-  MatDividerModule,
-  MatGridListModule,
-  MatListModule,
-  MatMenuModule,
-  MatNativeDateModule,
-  MatPaginatorModule,
-  MatProgressBarModule,
-  MatProgressSpinnerModule,
-  MatSidenavModule,
-  MatSliderModule,
-  MatSlideToggleModule,
-  MatSnackBarModule,
-  MatSortModule,
-  MatStepperModule,
+import { MatDividerModule } from '@angular/material/divider';
+import {  MatGridListModule} from '@angular/material/grid-list';
+import {  MatListModule} from '@angular/material/list';
+import {  MatMenuModule} from '@angular/material/menu';
+  /* import {MatNativeDateModule} from '@angular/material/native-date'; */
+/*import{  MatPaginatorModule} from ' @angular/material/paginator'; */
+import{  MatProgressBarModule} from '@angular/material/progress-bar';
+import{  MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import{  MatSidenavModule} from '@angular/material/sidenav';
+  import {MatSliderModule} from '@angular/material/slider';
+import {  MatSlideToggleModule} from '@angular/material/slide-toggle';
+/* import{  MatSnackBarModule} from ' @angular/material/snackbar'; */
+import{  MatSortModule } from '@angular/material/sort';
+  import {MatStepperModule} from '@angular/material/stepper';
   MatTabsModule,
   MatToolbarModule,
   MatTooltipModule,
