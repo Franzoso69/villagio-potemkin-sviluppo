@@ -7,13 +7,12 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { PageslandingPageComponent } from './pages/landing-page/landing-page.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PallanuotoMainComponent } from './pages/pallanuoto/pallanuotomain.component';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatBadgeModule } from '@angular/material/badge';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 import {
-  MatAutocompleteModule,
-  MatBadgeModule,
-  MatBottomSheetModule,
-  MatButtonToggleModule,
-  MatChipsModule,
-  MatDatepickerModule,
   MatDividerModule,
   MatGridListModule,
   MatListModule,
@@ -45,6 +44,7 @@ import {
   MatTableModule,
   MatDialogModule,
 } from '@angular/material';
+/* import {MatBottomSheetModule} from '@angular/material/bottomsheet'; */
 
 @NgModule({
   imports: [
