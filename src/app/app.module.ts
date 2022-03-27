@@ -7,7 +7,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { PageslandingPageComponent } from './pages/landing-page/landing-page.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PallanuotoMainComponent } from './pages/pallanuoto/pallanuotomain.component';
-import { MatAutocompleteModule } from '@angular/material/autocomplete';
+ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatChipsModule } from '@angular/material/chips';
@@ -16,9 +16,9 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
-/* import {MatNativeDateModule} from '@angular/material/native-date'; */
+/* import {MatNativeDateModule} from '@angular/material/native-date';  */
 /*import{  MatPaginatorModule} from ' @angular/material/paginator'; */
-import { MatProgressBarModule } from '@angular/material/progress-bar';
+ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSliderModule } from '@angular/material/slider';
@@ -44,7 +44,7 @@ import{
 import  {MatTableModule} from '@angular/material/table';
 import { MatDialogModule
 } from '@angular/material/dialog';
-/* import {MatBottomSheetModule} from '@angular/material/bottomsheet'; */
+/* import {MatBottomSheetModule} from '@angular/material/bottomsheet'; */ 
 
 @NgModule({
   imports: [
@@ -65,7 +65,7 @@ import { MatDialogModule
     /*BrowserAnimationsModule,*/
     /*MatNativeDateModule,*/
     /*MatPaginatorModule,*/
-    MatProgressBarModule,
+   MatProgressBarModule,
     MatProgressSpinnerModule,
     MatSidenavModule,
     MatSliderModule,
