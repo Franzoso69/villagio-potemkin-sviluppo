@@ -1,66 +1,65 @@
-import { Component, OnInit, ViewChild } from "@angular/core";
+import { Component, OnInit, ViewChild } from '@angular/core';
 
-import { MatDialog } from "@angular/material";
+import { MatDialog } from '@angular/material/dialog';
 
-import { MatSidenav } from "@angular/material/sidenav";
+import { MatSidenav } from '@angular/material/sidenav';
 import {
   Router,
   Event as RouterEvent,
   NavigationStart,
   NavigationEnd,
   NavigationCancel,
-  NavigationError
-} from "@angular/router";
-import { FormControl } from "@angular/forms";
+  NavigationError,
+} from '@angular/router';
+import { FormControl } from '@angular/forms';
 
 @Component({
-  selector: "my-app",
-  templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.css"]
+  selector: 'toolbar',
+  templateUrl: './toolbar.component.html',
+  styleUrls: ['./toolbar.component.css'],
 })
-export class AppComponent implements OnInit {
-
+export class ToolbarComponent implements OnInit {
   mode = new FormControl('push');
   loading = true;
 
-  // constructor(public dialog: MatDialog, private router: Router) {
-  //   router.events.subscribe((event: RouterEvent) => {
-  //     this.navigationInterceptor(event);
-  //   });
-  // }
+  constructor(public dialog: MatDialog, private router: Router) {
+    router.events.subscribe((event: RouterEvent) => {
+      this.navigationInterceptor(event);
+    });
+  }
   navigationInterceptor(event: RouterEvent): void {
     if (event instanceof NavigationStart) {
-      this.loading = true
+      this.loading = true;
     }
     if (event instanceof NavigationEnd) {
-      this.loading = false
+      this.loading = false;
     }
 
     if (event instanceof NavigationCancel) {
-      this.loading = false
+      this.loading = false;
     }
     if (event instanceof NavigationError) {
-      this.loading = false
+      this.loading = false;
     }
   }
 
-  phone(){
-  //  this.router.navigateByUrl('phone');
+  phone() {
+    //  this.router.navigateByUrl('phone');
   }
-  core(){
-  //  this.router.navigateByUrl('core/signup');
+  core() {
+    //  this.router.navigateByUrl('core/signup');
   }
   authenticated() {
-    if (localStorage.getItem("LoggedIn") == null) {
+    if (localStorage.getItem('LoggedIn') == null) {
       return false;
     }
-    if (localStorage.getItem("LoggedIn") != null) {
+    if (localStorage.getItem('LoggedIn') != null) {
       return true;
     } else return false;
   }
 
   logout() {
-    console.log("clicked");
+    console.log('clicked');
     // const dialogRef = this.dialog.open(LogoutComponent, {
     //   width: "430px"
     // });
@@ -106,7 +105,6 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.authenticated();
   }
-  title = "Angular";
-  description = "NgRx Example";
-  
+  title = 'Angular';
+  description = 'NgRx Example';
 }
